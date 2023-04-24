@@ -82,6 +82,7 @@ body {
 .slide-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
     margin-inline: auto;
@@ -90,4 +91,28 @@ body {
 
 .gradient-primary {
     background-image: var(--gradient-primary);
+}
+
+.custom-icon {
+    font-size: 2em;
+}
+
+.custom-icon.bi-twitter {
+    padding-top: 5.5px;
+}
+
+.custom-icon.bi-twitter:hover {
+    color: rgb(29, 133, 231);
+}
+
+.custom-icon.bi-instagram:hover {
+    color: rgb(211, 54, 15);
+}
+
+.custom-icon.bi-github:hover {
+    color: black;
+}
+
+.shadow-top {
+    box-shadow: 0rem -1rem 0.7rem rgba(0,0,0,.10);
 }
