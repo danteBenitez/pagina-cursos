@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 300 700;
+    src: url(./fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format('truetype');
+}
+
+:root {
+    --clr-primary: #631ceb;
+    --clr-primary-dark: #4514a1;
+    font-family: 'Montserrat', sans-serif;
+
+    --gradient-secondary: linear-gradient(0deg, red, orange);
+    --gradient-primary: linear-gradient(0deg, var(--clr-primary), var(--clr-primary-dark));
+}
+
+body {
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    width: 4.5rem;
+    margin: 1rem;
+}
+
+.btn-primary {
+    --bs-primary: var(--clr-primary);
+    --bs-btn-bg: var(--clr-primary);
+    --bs-btn-hover-bg: var(--clr-primary-dark);
+}
+
+.page-icon {
+    width: 5rem;
+}
+
+.btn-brand {
+    position: relative;
+    font-weight: 700;
+
+    transition: all 300ms ease-in;
+}
+
+.btn-brand::before {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    right: 10px;
+    bottom: 7px;
+    z-index: -1;
+    background-color: var(--clr-primary);
+    border-radius: 0.2rem;
+    scale: 0;
+    transform-origin: bottom right;
+    transition: all 300ms ease-in;
+}
+
+.btn-brand:hover {
+    color: #f0f0f0;
+}
+
+.btn-brand:hover::before {
+    scale: 1;
+}
+
+.text-gradient {
+    padding-block: 0.7rem;
+    font-size: 4rem;
+    color: transparent;
+    background-image: var(--gradient-secondary);
+    background-clip: text;
+    z-index: 1;
+}
+
+.border-red {
+    border: 1px solid red;
+}
+
+.slide-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-inline: auto;
+    aspect-ratio: 1 / 1;
+}
+
+.gradient-primary {
+    background-image: var(--gradient-primary);
+}
