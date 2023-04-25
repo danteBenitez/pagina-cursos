@@ -136,6 +136,7 @@ body {
     background-image: url(./img/body-bg.png);
     background-attachment: local;
     background-position: -1rem;
+    background-size: cover;
 }
 
 

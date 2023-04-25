@@ -1,0 +1,17 @@
+@import url(./custom-general.css);
+
+.custom-card {
+    min-width: 320px;
+    min-height: 390px;
+
+    max-width: 20vw;
+    max-height: 20vw;
+    margin-inline: auto;
+    margin-block: 1rem;
+}
+
+.custom-card p {
+    overflow: hidden;
+    max-height: 70px;
+    text-overflow: ellipsis;
+}
